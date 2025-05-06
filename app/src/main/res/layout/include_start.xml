@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/startLinearLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/activationButton"
+        android:layout_width="150dip"
+        android:layout_height="50dip"
+        android:onClick="onClick"
+        android:text="@string/active_button" />
+
+    <Button
+        android:id="@+id/takePicButton"
+        android:layout_width="150dip"
+        android:layout_height="50dip"
+        android:onClick="onClick"
+        android:text="@string/take_pic_button" />
+
+    <Button
+        android:id="@+id/automaticRecogButton"
+        android:layout_width="150dip"
+        android:layout_height="50dip"
+        android:onClick="onClick"
+        android:text="@string/automatic_recog_button" />
+
+    <Button
+        android:id="@+id/selectPicButton"
+        android:layout_width="150dip"
+        android:layout_height="50dip"
+        android:onClick="onClick"
+        android:text="@string/select_pic_button" />
+
+</LinearLayout>

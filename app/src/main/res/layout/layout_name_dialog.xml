@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/mTvTitle"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="请联网输入25位序列号(不区分大小写)"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#d8d8d8"/>
+
+    <EditText
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:id="@+id/mEtSn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/shape_dialog_name"
+        android:maxLines="1"
+        android:textSize="13sp" />
+
+    <Button
+        android:id="@+id/mBtActivation"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="right"
+        android:layout_marginTop="17dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="15dp"
+        android:layout_weight="1"
+        android:textSize="14sp"
+        android:textColor="#7700FF"
+        android:background="@null"
+        android:text="在线激活" />
+
+<!--    <LinearLayout-->
+<!--        android:layout_marginLeft="30dp"-->
+<!--        android:layout_marginRight="30dp"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:paddingBottom="20dp">-->
+<!--        <Button-->
+<!--            android:id="@+id/mBtActivation"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="35dp"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:layout_marginRight="5dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:textSize="12sp"-->
+<!--            android:background="#dddddd"-->
+<!--            android:text="激  活" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/mBtOff"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="35dp"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_marginLeft="5dp"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:textSize="12sp"-->
+<!--            android:background="#dddddd"-->
+<!--            android:text="取  消" />-->
+<!--    </LinearLayout>-->
+</LinearLayout>
+
