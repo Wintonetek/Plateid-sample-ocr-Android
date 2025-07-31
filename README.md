@@ -1,30 +1,30 @@
 # plateid_sample-Android
 
 
-接口说明顺序就是调用顺序
-序列号和TF卡授权方式要先加上授权服务
-顺序	接口	作用	参数说明
+The order of the interface instructions corresponds to the calling sequence
+For serial number and TF card authorization, the authorization service must be added first
+Order	Interface    Function	 Paramter Description
 
-// 2:精准识别0:快速/导入/拍照识别
+// Accurate recognition  0: Fast/Import/Photo recognition
 
-1	RecogService.recogModel = 2;	设置识别模式	
+1	RecogService.recogModel = 2;	Set recognition mode	
 
 2	Intent recogIntent=new Intent(activity, RecogService.class);
 
-//	启动识别服务	启动识别服务，调用核心设置接口、识别接口
+//	Start recognition service. This launches the recognition service and calls the core setting and recognition interfaces.
 
 activity.bindService(recogIntent,recogConn,Service.BIND_AUTO_CREATE);
 
-//获取初始化结果	0：初始化成功  其他：失败
+//Get initialization result: 0 = success, others = failure
 
 3	recogBinder.getInitPlateIDSDK();	
 
-//设置核心初始化参数	参考demo中的设置参数
+//Set core initialization parameters. Refer to the demo for parameter settings.
 
 4	recogBinder.setRecogArgu(cfgparameter, imageformat);	
 
-	//识别并获取结果	参考demo中的设置参数
+	//Perform recognition and get results. Refer to the demo for parameter settings.
  
 5	recogBinder.doRecogDetail(prp);
 
-说明：以上是完整的识别接口调用顺序，方便自定义界面用户查看。具体参数太多，可以参考demo中的设置，并配有详细的参数说明
+Note: The above is the complete sequence of recognition interface calls, which is helpful for users customizing their UI. There are many parameters, so please refer to the demo for configuration, which includes detailed parameter descriptions.
